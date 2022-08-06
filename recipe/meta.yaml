@@ -1,5 +1,5 @@
 {% set name = "flytekitplugins-data-fsspec" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-data-fsspec-{{ version }}.tar.gz
-  sha256: fb3be07b1b8f4cd06e3cf5b4aac7f7b9d77e59986dee2f2363f0f042eb61fb2b
+  sha256: 50ccb59bc868de72f011e31c10511d15fcd7e12095520ae9be5bb79aa9652c5d
 
 build:
   number: 0
@@ -37,7 +37,7 @@ about:
   home: https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-data-fsspec
   summary: This package provides data-plugins for flytekit, that are powered by fsspec
   license: Apache-2.0
-  license_file: 
+  license_file:
     - LICENSE
     - NOTICE
   description: |
