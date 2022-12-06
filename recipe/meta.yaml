@@ -1,5 +1,5 @@
 {% set name = "flytekitplugins-data-fsspec" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-data-fsspec-{{ version }}.tar.gz
-  sha256: e9af96e04803206b02df86e5b85006b42e0b45aae3c91ff16ef341df498b1aaf
+  sha256: e9551d7fef71ec5782761101b9c37519ef3738085536c39f87b63e4650e9910e
 
 build:
   number: 0
