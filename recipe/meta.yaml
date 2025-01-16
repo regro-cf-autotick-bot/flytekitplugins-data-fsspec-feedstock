@@ -7,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-data-fsspec-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flytekitplugins-data-fsspec-{{ version }}.tar.gz
   sha256: 8ac0878a41aa27df3dbbeb132469d3f106714682b836f009e5cfd7015306400f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - flytekit >=1.0.0b3,<1.2.0
     - botocore >=1.7.48
     - fsspec >=2021.7.0
@@ -32,6 +32,7 @@ test:
   #   - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-data-fsspec
